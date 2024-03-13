@@ -6,8 +6,8 @@ void L1_LRU(unsigned int way, unsigned int set, bool empty_flag, char which_cach
 	case ('D'): 	// We're in the L1_data cache if which_chache is 'D' or 'd'
 		// If the way is empty, we use it and decrement every way less than this way.
 		if (empty_flag) {
-			for (int i = 0; i < way; ++i) {
-				L1_data[i][set].LRU_bits = --L1_data[i][set].LRU_bits; //pre-decrement the LRU bits
+			for (unsigned int i = 0; i < way; ++i) {
+				L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits - 1; //pre-decrement the LRU bits
 			}
 		}
 		// If a way is NOT empty, we compare LRU bits of the current set with the LRU bits of the other sets
@@ -18,7 +18,7 @@ void L1_LRU(unsigned int way, unsigned int set, bool empty_flag, char which_cach
 				}
 				else
 				{
-					L1_data[i][set].LRU_bits = --L1_data[i][set].LRU_bits; //pre-decrement the LRU bits
+					L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits - 1; //pre-decrement the LRU bits
 				}
 			}
 		}
@@ -31,8 +31,8 @@ void L1_LRU(unsigned int way, unsigned int set, bool empty_flag, char which_cach
 	case ('I'): 	// We're in the L1_instruction cache if which_chache is 'I' or 'i'
 		// If a way is empty, we use it and decrement every way less than this way
 		if (empty_flag) {
-			for (int i = 0; i < way; ++i) {
-				L1_inst[i][set].LRU_bits = --L1_inst[i][set].LRU_bits;
+			for (unsigned int i = 0; i < way; ++i) {
+				L1_inst[i][set].LRU_bits = L1_inst[i][set].LRU_bits - 1;
 			}
 		}
 		// If a way is NOT empty, we compare LRU bits of the current set with the LRU bits of the other sets
