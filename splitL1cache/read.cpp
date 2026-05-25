@@ -1,5 +1,7 @@
 #include "header.h"
 
+using namespace std;
+
 void read(unsigned int addr) {
 
 	unsigned int tag = addr >> (BYTE_OFFSET + CACHE_INDEX);				// Shift the address right by (6+14=20) to get the tag
@@ -12,7 +14,7 @@ void read(unsigned int addr) {
 	if (way >= 0) {									// if we have a matching tag, then we have an data cache hit! (unless invalid MESI state)
 		switch (L1_data[way][set].MESI_char) {
 		case 'M':									// in we're in the modified state
-			statistics.data_hit++;					// Incremenet the data hit counter (We have a new hit!)
+			statistics.data_hit++;					// Increment the data hit counter (We have a new hit!)
 			L1_data[way][set].MESI_char = 'M';		// stay in the modified state
 			L1_data[way][set].tag_bits = tag;
 			L1_data[way][set].set_bits = set;
@@ -22,7 +24,7 @@ void read(unsigned int addr) {
 			break;
 
 		case 'E':									// if we're in the exclusive state, assume a different processor is reading
-			statistics.data_hit++;					// Incremenet the data hit counter (We have a new hit!)
+			statistics.data_hit++;					// Increment the data hit counter (We have a new hit!)
 			L1_data[way][set].MESI_char = 'S';		// Move the Shared state, another processor is doing the read operation
 			L1_data[way][set].tag_bits = tag;
 			L1_data[way][set].set_bits = set;
@@ -32,7 +34,7 @@ void read(unsigned int addr) {
 			break;
 
 		case 'S':									// if we are in the shared state
-			statistics.data_hit++;					// Incremenet the data hit counter (We have a new hit!)
+			statistics.data_hit++;					// Increment the data hit counter (We have a new hit!)
 			L1_data[way][set].MESI_char = 'S';		// remain in the shared state
 			L1_data[way][set].tag_bits = tag;
 			L1_data[way][set].set_bits = set;
@@ -42,7 +44,7 @@ void read(unsigned int addr) {
 			break;
 
 		case 'I':									// if we are in the invalid state, we'll have a miss
-			statistics.data_miss++;					// Incremenet the data miss counter 
+			statistics.data_miss++;					// Increment the data miss counter 
 			L1_data[way][set].MESI_char = 'S';		// and we move to the Shared state. 
 			L1_data[way][set].tag_bits = tag;
 			L1_data[way][set].set_bits = set;
@@ -51,7 +53,7 @@ void read(unsigned int addr) {
 			L1_LRU(way, set, empty_flag, 'D');		// Update the data cache LRU count
 
 			if (mode == 1) {						// Simulating a cache read communication with L2
-				cout << " [Data-Operation] Read from L2: L1 cache miss, obtain data form L2 " << hex << addr << endl;
+				cout << " [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 " << hex << addr << dec << endl;
 			}
 			break;
 		}
@@ -77,34 +79,32 @@ void read(unsigned int addr) {
 			L1_LRU(way, set, empty_flag, 'D');			// Update the data cache LRU order/count
 
 			if (mode == 1) {							// Simulating a cache read communication with L2
-				cout << " [Data-Operation] Read from L2: L1 cache miss, obtain data form L2 " << hex << addr << endl;
+				cout << " [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 " << hex << addr << dec << endl;
 			}
 		}
 
 		else {					// if we don't have any empty lines, we need to evict the LRU line. 
 			if (mode == 1) {
-				cout << " [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 " << hex << addr << endl;
+				cout << " [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 " << hex << addr << dec << endl;
 			}
 
-			for (int n = 0; n < 8; ++n) {
-				if (L1_data[n][set].MESI_char == 'I') {	// Since we don't have empty lines, we check for a way with an invalid lines to evict
+			way = -1;
+			for (int n = 0; n < DC_ASSOCIAVITY; ++n) {	// Since we don't have empty lines, find first invalid way to evict
+				if (L1_data[n][set].MESI_char == 'I') {
 					way = n;
-				}
-				else {
-					way = -1;				// if we don't have any invalid data cache lines, flag the  way with "-1"
+					break;
 				}
 			}
 
-			if (way < 0) {					//If we don't have any invalid lines, 
+			if (way < 0) {					//If we don't have any invalid lines,
 				way = find_LRU(set, 'D');				// Find the LRU way in the data cache
-				if (way >= 0) {							// if we have a way that's 0, (LRU in the data cache, we use it)
-					L1_data[way][set].MESI_char = 'E';	// the data here will be new, and exclusive to this cache
-					L1_data[way][set].tag_bits = tag;
-					L1_data[way][set].set_bits = set;
-					L1_data[way][set].address = addr;
+				assert(way >= 0 && "LRU invariant violated in L1_data");
+				L1_data[way][set].MESI_char = 'E';		// the data here will be new, and exclusive to this cache
+				L1_data[way][set].tag_bits = tag;
+				L1_data[way][set].set_bits = set;
+				L1_data[way][set].address = addr;
 
-					L1_LRU(way, set, empty_flag, 'D');	// update the L1 data cache LRU bits
-				}
+				L1_LRU(way, set, empty_flag, 'D');		// update the L1 data cache LRU bits
 			}
 
 			else { 							// if we have an invalid way, we evict it and 

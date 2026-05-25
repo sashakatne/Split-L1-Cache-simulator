@@ -1,5 +1,7 @@
 #include "header.h"
 
+using namespace std;
+
 void fetch_inst(unsigned int addr) {
 
 	unsigned int tag = addr >> (BYTE_OFFSET + CACHE_INDEX);			// Shift the address right by (6+14=20) to get the tag
@@ -22,7 +24,7 @@ void fetch_inst(unsigned int addr) {
 			L1_LRU(way, set, empty_flag, 'I');			// Update the instruction cache LRU count
 			break;
 
-		case 'E':										// If we are in the modified state, another processor is fetching
+		case 'E':										// If we are in the exclusive state, another processor is also fetching → go to Shared
 			statistics.inst_hit++;						// We have a valid hit, increment the instruction cache hit counter
 			L1_inst[way][set].MESI_char = 'S';			// Move the Shared state
 			L1_inst[way][set].tag_bits = tag;
@@ -52,7 +54,7 @@ void fetch_inst(unsigned int addr) {
 			L1_LRU(way, set, empty_flag, 'I');			// Update the instruction cache LRU count
 
 			if (mode == 1) {							// Simulating the cache fetch instruction communication with L2
-				cout << " [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction form L2 " << hex << addr << endl;
+				cout << " [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 " << hex << addr << dec << endl;
 			}
 			break;
 		}
@@ -76,33 +78,31 @@ void fetch_inst(unsigned int addr) {
 			L1_LRU(way, set, empty_flag, 'I');		// Update the instruction cache LRU order/count
 
 			if (mode == 1) {						// Simulating the cache fetch instruction communication with L2
-				cout << " [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction form L2 " << hex << addr << endl;
+				cout << " [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 " << hex << addr << dec << endl;
 			}
 		}
 
 		else {						// if we don't have any empty lines, we need to evict the LRU line. 
 			if (mode == 1) {
-				cout << " [Instruction-Operation] Read from L2: L1 cache miss, obtain intsruction from L2 " << hex << endl;
+				cout << " [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 " << hex << addr << dec << endl;
 			}
 
-			for (int n = 0; n < 4; ++n) {
-				if (L1_inst[n][set].MESI_char == 'I') { // Since we don't have empty lines, we check for a way with an invalid lines to evict
+			way = -1;
+			for (int n = 0; n < IC_ASSOCIAVITY; ++n) {	// find first invalid way to evict
+				if (L1_inst[n][set].MESI_char == 'I') {
 					way = n;
-				}
-				else {
-					way = -1;		// if we don't have any invalid instruction cache lines, flag the  way with "-1"
+					break;
 				}
 			}
-			if (way < 0) {			//If we don't have any invalid lines, 
+			if (way < 0) {			//If we don't have any invalid lines,
 				way = find_LRU(set, 'I');				// Find the LRU way in the instruction cache
-				if (way >= 0) {							// if we have a way that's 0, (LRU in the instruction cache, we use it)
-					L1_inst[way][set].MESI_char = 'E';	// the instruction here will be new, and exclusive to this cache
-					L1_inst[way][set].tag_bits = tag;
-					L1_inst[way][set].set_bits = set;
-					L1_inst[way][set].address = addr;
+				assert(way >= 0 && "LRU invariant violated in L1_inst");
+				L1_inst[way][set].MESI_char = 'E';		// the instruction here will be new, and exclusive to this cache
+				L1_inst[way][set].tag_bits = tag;
+				L1_inst[way][set].set_bits = set;
+				L1_inst[way][set].address = addr;
 
-					L1_LRU(way, set, empty_flag, 'I');	// update the L1 instruction cache LRU bits
-				}
+				L1_LRU(way, set, empty_flag, 'I');		// update the L1 instruction cache LRU bits
 			}
 			else { 					// if we have an invalid way, we evict it and 
 				L1_inst[way][set].MESI_char = 'E';		// the instruction here will be new, and exclusive to this cache

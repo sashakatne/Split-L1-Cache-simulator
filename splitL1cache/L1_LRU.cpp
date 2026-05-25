@@ -1,53 +1,50 @@
 #include "header.h"
 
+// LRU update for pseudo-LRU per-set replacement.
+// Invariant (under correct use): each LRU_bits value in a set is unique
+// across used ways; promoting `way` to MRU shifts the others down by one.
+// Decrements are guarded so that a broken invariant (e.g., multiple ways
+// at LRU=0 during warmup) cannot wrap an unsigned counter to UINT_MAX.
 void L1_LRU(unsigned int way, unsigned int set, bool empty_flag, char which_cache) {
 	switch (which_cache) {
-	case ('d'):
-	case ('D'): 	// We're in the L1_data cache if which_chache is 'D' or 'd'
-		// If the way is empty, we use it and decrement every way less than this way.
+	case 'D': 	// L1_data cache
 		if (empty_flag) {
+			// New way being filled; decrement only ways below it that are non-zero.
 			for (unsigned int i = 0; i < way; ++i) {
-				L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits - 1; //pre-decrement the LRU bits
+				if (L1_data[i][set].LRU_bits > 0) {
+					L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits - 1;
+				}
 			}
 		}
-		// If a way is NOT empty, we compare LRU bits of the current set with the LRU bits of the other sets
 		else {
-			for (int i = 0; i < 8; ++i) {
-				if (L1_data[way][set].LRU_bits > L1_data[i][set].LRU_bits) {
-					L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits;    //no need to do anything, keep the same order
-				}
-				else
-				{
-					L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits - 1; //pre-decrement the LRU bits
+			// Promote `way` to MRU; decrement every way whose LRU is >= way's old LRU.
+			for (int i = 0; i < DC_ASSOCIAVITY; ++i) {
+				if (L1_data[way][set].LRU_bits <= L1_data[i][set].LRU_bits
+				    && L1_data[i][set].LRU_bits > 0) {
+					L1_data[i][set].LRU_bits = L1_data[i][set].LRU_bits - 1;
 				}
 			}
 		}
-		L1_data[way][set].LRU_bits = 0x7;	// Set the current set to MRU 111 (0x7 in Hex)
+		L1_data[way][set].LRU_bits = 0x7;	// MRU for 3-bit (8-way) counter
 		break;
 
-
-
-	case ('i'):
-	case ('I'): 	// We're in the L1_instruction cache if which_chache is 'I' or 'i'
-		// If a way is empty, we use it and decrement every way less than this way
+	case 'I': 	// L1_instruction cache
 		if (empty_flag) {
 			for (unsigned int i = 0; i < way; ++i) {
-				L1_inst[i][set].LRU_bits = L1_inst[i][set].LRU_bits - 1;
+				if (L1_inst[i][set].LRU_bits > 0) {
+					L1_inst[i][set].LRU_bits = L1_inst[i][set].LRU_bits - 1;
+				}
 			}
 		}
-		// If a way is NOT empty, we compare LRU bits of the current set with the LRU bits of the other sets
 		else {
-			for (int i = 0; i < 4; ++i) {
-				if (L1_inst[way][set].LRU_bits > L1_inst[i][set].LRU_bits) {
-					L1_inst[i][set].LRU_bits = L1_inst[i][set].LRU_bits;      //no need to do anything, keep the same order
-				}
-				else
-				{
-					--L1_inst[i][set].LRU_bits;                  //pre-decrement the LRU bits
+			for (int i = 0; i < IC_ASSOCIAVITY; ++i) {
+				if (L1_inst[way][set].LRU_bits <= L1_inst[i][set].LRU_bits
+				    && L1_inst[i][set].LRU_bits > 0) {
+					L1_inst[i][set].LRU_bits = L1_inst[i][set].LRU_bits - 1;
 				}
 			}
 		}
-		L1_inst[way][set].LRU_bits = 0x3; // Set the current set to MRU 11 (0x3 in Hex)
+		L1_inst[way][set].LRU_bits = 0x3;	// MRU for 2-bit (4-way) counter
 		break;
 	}
 }

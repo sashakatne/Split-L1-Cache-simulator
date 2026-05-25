@@ -4,13 +4,10 @@
 #include <fstream>
 #include <vector>
 #include <string>
-#include <stdlib.h>
-#include <stdio.h>
-#include <bitset>
-#include <sstream>
-#include <string.h>
-
-using namespace std;
+#include <cstdlib>
+#include <cstdio>
+#include <cstring>
+#include <cassert>
 
 constexpr auto DC_ASSOCIAVITY = 8;						// Data cache associativity is 8
 constexpr auto DC_SETS = 16*1024;						// Data cache sets are 16k
@@ -23,10 +20,9 @@ constexpr auto IC_BYTE_SELECT = 64;						// Instruction cache byte select is 64
 constexpr auto BYTE_OFFSET = 6;							// the byte offset is 6 bits
 constexpr auto CACHE_INDEX = 14;						// the set bits/cache index is 14 bits
 constexpr auto TAG_BITS = 12;							// the tag bits are (32 - 14 - 6 = 12 bits) 
-constexpr auto MASK_BYTE_SELECT = 0x0000003F;			// mask the least significat 6 bits for the byte offset
-constexpr auto MASK_CACHE_INDEX = 0x000FFFFF;			// mask the least significat 20 bits for the (byte offset + cache index/set)
-constexpr auto MASK_TAG_BITS = 0xFFF0000;				// mask the most significat 12 bits for the byte offset
-constexpr auto EMPTY_TAG = 4096;						//We are using the value 4096 to indicate an empty tag(since 0 - 4095 are used)
+constexpr auto MASK_BYTE_SELECT = 0x0000003F;			// mask the least significant 6 bits for the byte offset
+constexpr auto MASK_CACHE_INDEX = 0x000FFFFF;			// mask the least significant 20 bits for the (byte offset + cache index/set)
+constexpr auto EMPTY_TAG = 4096;						// sentinel for an empty tag (tag is 12 bits, valid range 0-4095)
 
 class cache {
 public:
@@ -66,8 +62,8 @@ void L1_LRU(unsigned int way, unsigned int set, bool empty_flag, char which_cach
 int find_LRU(unsigned int set, char which_cache);
 void invalidate(unsigned int addr);
 void fetch_inst(unsigned int addr);
-void snoop(unsigned int addr);
+void snoop_invalidate(unsigned int addr);
 void read(unsigned int addr);
 void write(unsigned int addr);
 void print_stats();
-void parser(int mode, const char* filename);
+void parser(const char* filename);

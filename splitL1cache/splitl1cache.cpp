@@ -1,5 +1,7 @@
 #include "header.h"
 
+using namespace std;
+
 int main(int argc, char** argv) {
 
     if (argc != 3) {
@@ -25,8 +27,8 @@ int main(int argc, char** argv) {
 
     cout << "\nSelected Mode: " << mode << "\n\n"; // Display the selected mode
 
-    // Call the parser function, and give it the mode and the file name
-    parser(mode, argv[2]);
+    // Call the parser function with the trace file name (mode is read via the global)
+    parser(argv[2]);
 
     cout << "\n\t --- Simulation done! --- " << endl;
 

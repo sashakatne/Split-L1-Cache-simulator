@@ -1,5 +1,7 @@
 #include "header.h"
 
+using namespace std;
+
 void print_stats() {
 
 	//Calculate the hit ratio for the data and the instrucion caches
@@ -10,7 +12,7 @@ void print_stats() {
 	statistics.inst_hit_ratio = inst_hit_r;
 
 	cout << "\n \t ** KEY CACHE USAGE STATISTICS ** " << endl;
-	if (statistics.data_miss == 0) {				// If we don't have any misses, then no operations took place!
+	if (statistics.data_read + statistics.data_write == 0) {	// No reads or writes — data cache was untouched
 		cout << "no operations took place on the Data cache" << endl;
 	}
 	else {
@@ -24,7 +26,7 @@ void print_stats() {
 		cout << " Cache Hit Percentage: \t" << dec << (statistics.data_hit_ratio * 100) << " %" << endl;
 	}
 
-	if (statistics.inst_miss == 0) {				// If we don't have any misses, then no operations took place!
+	if (statistics.inst_read == 0) {				// No instruction reads — instruction cache was untouched
 		cout << "\n The cache instruction was not used/not operated on" << endl;
 	}
 	else {
