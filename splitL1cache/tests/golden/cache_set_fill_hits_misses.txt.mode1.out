@@ -1,0 +1,37 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 1
+
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 2123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 4123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 6123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 8123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 a123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 c123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 e123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 3123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 5123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 7123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 9123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 b123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 d123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 f123450
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	32
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	16
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 

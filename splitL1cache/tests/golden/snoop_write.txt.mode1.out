@@ -1,0 +1,17 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 1
+
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+no operations took place on the Data cache
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 

@@ -1,0 +1,121 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 1
+
+ [Data-Operation] Read for Ownership from L2 0
+ [Data Write_Through] Write to L2: we have a data Cache Miss 0
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 200001
+ [Data Write_Through] Write to L2: we have a data Cache Miss 200001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 400002
+ [Data Write_Through] Write to L2: we have a data Cache Miss 400002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	3
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 600003
+ [Data Write_Through] Write to L2: we have a data Cache Miss 600003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	4
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	4
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 800000
+ [Data Write_Through] Write to L2: we have a data Cache Miss 800000
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	5
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	5
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 a00001
+ [Data Write_Through] Write to L2: we have a data Cache Miss a00001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	6
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 c00002
+ [Data Write_Through] Write to L2: we have a data Cache Miss c00002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	7
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	7
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 e00003
+ [Data Write_Through] Write to L2: we have a data Cache Miss e00003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	8
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	8
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 

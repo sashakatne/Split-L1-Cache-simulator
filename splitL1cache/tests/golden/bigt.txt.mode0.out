@@ -1,0 +1,26 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 0
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	159629
+ number of Cache Writes: 	83027
+ number of Cache Hits: 	 	241523
+ number of Cache Misses: 	1133
+ Cache Hit Ratio: 		0.995331
+ Cache Hit Percentage: 	99.5331 %
+
+	 -- INSTRUCTION CACHE STATISTICS -- 
+ number of Cache Reads: 	757335
+ number of Cache Hits: 		754360
+ number of Cache Misses: 	2975
+ Cache Hit Ratio: 		0.996072
+ Cache Hit Percentage: 	99.6072 %
+
+	 --- Simulation done! --- 

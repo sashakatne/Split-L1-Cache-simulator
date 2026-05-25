@@ -1,0 +1,39 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 1
+
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 999de132
+ [Data-Operation] Read for Ownership from L2 116de123
+ [Data Write_Through] Write to L2: we have a data Cache Miss 116de123
+ [Data-Operation] Read for Ownership from L2 666de135
+ [Data Write_Through] Write to L2: we have a data Cache Miss 666de135
+ [Data-Operation] Read for Ownership from L2 333de12c
+ [Data Write_Through] Write to L2: we have a data Cache Miss 333de12c
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 846de10c
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 777de136
+ [Data-Operation] Read for Ownership from L2 abcde128
+ [Data Write_Through] Write to L2: we have a data Cache Miss abcde128
+ [Data-Operation] Read for Ownership from L2 100de101
+ [Data Write_Through] Write to L2: we have a data Cache Miss 100de101
+ [Data-Operation] Read for Ownership from L2 aaade101
+ [Data Write_Back] Write to L2: We have a data Cache Miss aaade101
+ [Data-Operation] Read for Ownership from L2 edcde101
+ [Data Write_Back] Write to L2: We have a data Cache Miss edcde101
+[Snoop-operation] Return data to L2 aaade101
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	4
+ number of Cache Writes: 	7
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	10
+ Cache Hit Ratio: 		0.0909091
+ Cache Hit Percentage: 	9.09091 %
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 

@@ -1,0 +1,743 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 1
+
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 0
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 200001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 400002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	3
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 600003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	4
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	4
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 800000
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	5
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	5
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 a00001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	6
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	6
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 c00002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	7
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	7
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 e00003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	8
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	8
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 0
+ [Data Write_Through] Write to L2: we have a data Cache Miss 0
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 200001
+ [Data Write_Through] Write to L2: we have a data Cache Miss 200001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 400002
+ [Data Write_Through] Write to L2: we have a data Cache Miss 400002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	3
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 600003
+ [Data Write_Through] Write to L2: we have a data Cache Miss 600003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	4
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	4
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 800000
+ [Data Write_Through] Write to L2: we have a data Cache Miss 800000
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	5
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	5
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 a00001
+ [Data Write_Through] Write to L2: we have a data Cache Miss a00001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	6
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 c00002
+ [Data Write_Through] Write to L2: we have a data Cache Miss c00002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	7
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	7
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 e00003
+ [Data Write_Through] Write to L2: we have a data Cache Miss e00003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	8
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	8
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 2123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 4123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 6123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 8123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 a123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 c123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 e123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 3123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 5123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 7123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 9123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 b123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 d123450
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 f123450
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	32
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	16
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+no operations took place on the Data cache
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 6000040
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1239
+
+ the value of n (the operation) is not valid 
+
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 60
+ [Data Write_Through] Write to L2: we have a data Cache Miss 60
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.333333
+ Cache Hit Percentage: 	33.3333 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.333333
+ Cache Hit Percentage: 	33.3333 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.333333
+ Cache Hit Percentage: 	33.3333 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+[Snoop-operation] Return data to L2 1231
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1234
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	3
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0.4
+ Cache Hit Percentage: 	40 %
+
+ The cache instruction was not used/not operated on
+[Snoop-operation] Return data to L2 1234
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	3
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0.4
+ Cache Hit Percentage: 	40 %
+
+ The cache instruction was not used/not operated on
+ [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 1231
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	3
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0.4
+ Cache Hit Percentage: 	40 %
+
+	 -- INSTRUCTION CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Hits: 		0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+[Snoop-operation] Return data to L2 1231
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	3
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0.4
+ Cache Hit Percentage: 	40 %
+
+	 -- INSTRUCTION CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Hits: 		0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	3
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0.4
+ Cache Hit Percentage: 	40 %
+
+	 -- INSTRUCTION CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Hits: 		0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 0
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 200001
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 400002
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 600003
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 800000
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 a00001
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 c00002
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 e00003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	8
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	8
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1000000
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	9
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	9
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1600001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	10
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	10
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1200002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	11
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	11
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1800001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	12
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	12
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 2800001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	13
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	13
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 2a00002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	14
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	14
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 3000001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	15
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	15
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 4000003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.0588235
+ Cache Hit Percentage: 	5.88235 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	2
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.111111
+ Cache Hit Percentage: 	11.1111 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	3
+ number of Cache Hits: 	 	3
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.157895
+ Cache Hit Percentage: 	15.7895 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	4
+ number of Cache Hits: 	 	4
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.2
+ Cache Hit Percentage: 	20 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	5
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	16
+ Cache Hit Ratio: 		0.238095
+ Cache Hit Percentage: 	23.8095 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read for Ownership from L2 800000
+ [Data Write_Back] Write to L2: We have a data Cache Miss 800000
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	16
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	17
+ Cache Hit Ratio: 		0.227273
+ Cache Hit Percentage: 	22.7273 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 0
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	17
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	18
+ Cache Hit Ratio: 		0.217391
+ Cache Hit Percentage: 	21.7391 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 200001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	18
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	19
+ Cache Hit Ratio: 		0.208333
+ Cache Hit Percentage: 	20.8333 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 400002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	19
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	20
+ Cache Hit Ratio: 		0.2
+ Cache Hit Percentage: 	20 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 600003
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	20
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	21
+ Cache Hit Ratio: 		0.192308
+ Cache Hit Percentage: 	19.2308 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 1800000
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	21
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	22
+ Cache Hit Ratio: 		0.185185
+ Cache Hit Percentage: 	18.5185 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 a00001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	22
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	23
+ Cache Hit Ratio: 		0.178571
+ Cache Hit Percentage: 	17.8571 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 c00002
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	23
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	24
+ Cache Hit Ratio: 		0.172414
+ Cache Hit Percentage: 	17.2414 %
+
+ The cache instruction was not used/not operated on
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 5600001
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	24
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	5
+ number of Cache Misses: 	25
+ Cache Hit Ratio: 		0.166667
+ Cache Hit Percentage: 	16.6667 %
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 

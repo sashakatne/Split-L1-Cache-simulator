@@ -1,0 +1,105 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 0
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	2
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	3
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	3
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	4
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	4
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	5
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	5
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	6
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	6
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	7
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	7
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	0
+ number of Cache Writes: 	8
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	8
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 

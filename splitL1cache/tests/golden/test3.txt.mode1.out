@@ -1,0 +1,69 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 1
+
+ [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 333de880
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+no operations took place on the Data cache
+
+	 -- INSTRUCTION CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Hits: 		0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+ [Data-Operation] Read for Ownership from L2 363de999
+ [Data Write_Through] Write to L2: we have a data Cache Miss 363de999
+ [Data-Operation] Read for Ownership from L2 343de880
+ [Data Write_Through] Write to L2: we have a data Cache Miss 343de880
+ [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 259de915
+ [Data-Operation] Read for Ownership from L2 573de938
+ [Data Write_Through] Write to L2: we have a data Cache Miss 573de938
+ [Data-Operation] Read for Ownership from L2 393de999
+ [Data Write_Through] Write to L2: we have a data Cache Miss 393de999
+ [Data-Operation] Read for Ownership from L2 712de323
+ [Data Write_Through] Write to L2: we have a data Cache Miss 712de323
+ [Data-Operation] Read for Ownership from L2 393de896
+ [Data Write_Through] Write to L2: we have a data Cache Miss 393de896
+ [Data-Operation] Read for Ownership from L2 433de880
+ [Data Write_Through] Write to L2: we have a data Cache Miss 433de880
+ [Data-Operation] Read for Ownership from L2 969de915
+ [Data Write_Through] Write to L2: we have a data Cache Miss 969de915
+ [Instruction-Operation] Read from L2: L1 cache miss, obtain instruction from L2 993de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 112de323
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 361de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 362de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 365de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 466de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 56ade999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 46ede999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 16dde999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 963de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 763de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 863de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 463de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 363de999
+ [Data-Operation] Read from L2: L1 cache miss, obtain data from L2 163de999
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	14
+ number of Cache Writes: 	7
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	21
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+	 -- INSTRUCTION CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Hits: 		0
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+	 --- Simulation done! --- 

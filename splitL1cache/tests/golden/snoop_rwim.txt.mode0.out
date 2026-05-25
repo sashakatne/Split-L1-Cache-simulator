@@ -1,0 +1,105 @@
+	 --- L1 Cache Simulation ---
+
+  Mode 0: Display only the required summary of usage statistics and responses to 9s in the trace file.
+  Mode 1: Display everything from mode 0, as well as the communication messages to the L2 cache.
+
+Selected Mode: 0
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	1
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	0
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0
+ Cache Hit Percentage: 	0 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	0
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	1
+ Cache Hit Ratio: 		0.5
+ Cache Hit Percentage: 	50 %
+
+ The cache instruction was not used/not operated on
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.333333
+ Cache Hit Percentage: 	33.3333 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.333333
+ Cache Hit Percentage: 	33.3333 %
+
+ The cache instruction was not used/not operated on
+
+ the value of n (the operation) is not valid 
+
+
+ 	 ** KEY CACHE USAGE STATISTICS ** 
+
+	 -- DATA CACHE STATISTICS -- 
+ number of Cache Reads: 	2
+ number of Cache Writes: 	1
+ number of Cache Hits: 	 	1
+ number of Cache Misses: 	2
+ Cache Hit Ratio: 		0.333333
+ Cache Hit Percentage: 	33.3333 %
+
+ The cache instruction was not used/not operated on
+
+	 --- Simulation done! --- 
