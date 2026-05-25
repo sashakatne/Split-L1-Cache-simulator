@@ -1,6 +1,6 @@
 # Compiler settings - Can be customized.
 CXX = g++
-CXXFLAGS = -Wall -std=c++20
+CXXFLAGS = -Wall -Wextra -Wshadow -std=c++20
 TARGET = splitl1cache
 SRCS = $(wildcard *.cpp)
 OBJS = $(SRCS:.cpp=.o)
@@ -17,5 +17,13 @@ $(TARGET): $(OBJS)
 clean:
 	rm -f $(TARGET) $(OBJS)
 
+# Run golden-output regression tests
+test: $(TARGET)
+	@bash tests/run_all.sh
+
+# Regenerate golden baselines (use after an intentional output change)
+bless: $(TARGET)
+	@bash tests/bless.sh
+
 # Phony targets
-.PHONY: clean
+.PHONY: clean test bless
